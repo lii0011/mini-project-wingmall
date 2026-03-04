@@ -1552,6 +1552,9 @@
   .justify-start {
     justify-content: flex-start;
   }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
+  }
   .space-y-6 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -2227,6 +2230,13 @@
       }
     }
   }
+  .hover\:p-1 {
+    &:hover {
+      @media (hover: hover) {
+        padding: calc(var(--spacing) * 1);
+      }
+    }
+  }
   .hover\:p-2 {
     &:hover {
       @media (hover: hover) {
@@ -2248,10 +2258,24 @@
       }
     }
   }
+  .hover\:px-2 {
+    &:hover {
+      @media (hover: hover) {
+        padding-inline: calc(var(--spacing) * 2);
+      }
+    }
+  }
   .hover\:px-3 {
     &:hover {
       @media (hover: hover) {
         padding-inline: calc(var(--spacing) * 3);
+      }
+    }
+  }
+  .hover\:py-1 {
+    &:hover {
+      @media (hover: hover) {
+        padding-block: calc(var(--spacing) * 1);
       }
     }
   }
